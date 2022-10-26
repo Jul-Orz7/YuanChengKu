@@ -19,6 +19,21 @@
 		<div class="container">
 			<div class="sj-item">
 					<div class="sj-top">
+						<img src="https://img01.yzcdn.cn/vant/sand.jpg" alt="" style="height: 80px; width: 80px;"/>
+						<div class="sj-item1">
+							<p>套餐二</p>
+							<h6 class="text-muted">专业版</h6>
+							<p class="text-danger">￥8980</p>
+						</div>
+							<div class="jia"><van-stepper v-model="value" /></div>
+					</div>
+					
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="sj-item">
+					<div class="sj-top">
 						<img src="https://img01.yzcdn.cn/vant/leaf.jpg" alt="" style="height: 80px; width: 80px;"/>
 						<div class="sj-item1">
 							<p>套餐二</p>
@@ -29,9 +44,7 @@
 					</div>
 					
 			</div>
-		</div><br/>
-	
-			
+		</div>
 	
 
 
@@ -46,22 +59,19 @@
 			</div>
 		</div>
 	</template>
-	<script>
+	
+<script>
 	export default {
-		// name:'Private',
-		data() {
-			return {
-				value: ''
-			}
-		}
+		name:'Private',
 	}
 </script>
-	
-	<style scoped>
+<style scoped>
+
 	.container{
 		padding: 3%;
 	}
 	.sj-top{
+		
 		position:relative;
 		display: flex;
 		width: 100%;

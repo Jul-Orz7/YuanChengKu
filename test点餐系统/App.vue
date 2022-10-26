@@ -4,6 +4,10 @@
       <!-- 使用顶部组件 -->
       <Banner/>
     </div>
+			<!-- 指定组件的呈现位置 -->
+      <div>
+      <router-view></router-view>
+      </div>
       <!-- 使用底部组件 -->
       <MyFooter/>
     </div>

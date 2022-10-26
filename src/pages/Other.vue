@@ -18,7 +18,6 @@
 			</div>
 		</div>
 
-		
 		<div class="container">
 			<div class="sj-item">
 					<div class="sj-top">
@@ -34,7 +33,6 @@
 			</div>
 		</div>
 
-	
 		<div class="container">
 			<div class="sj-item">
 					<div class="sj-top">
@@ -48,7 +46,7 @@
 					</div>
 					
 			</div>
-		</div>
+		</div><br/>
 		
 	<!-- 套餐结束 -->
 	<div class="a" >
@@ -105,4 +103,8 @@
 		text-align:right;
 		
 	}
+	h4{
+    padding: 2%;
+    /* border-bottom: 1px solid rgb(209, 204, 204); */
+}
 </style>

@@ -17,21 +17,6 @@ import MyWallet from '../pages/MyWallet'
 //创建并暴露一个路由器
 export default new VueRouter({
 	routes:[
-		{path:'/',redirect:'home/private'},
-		{
-			path:'/home',
-			component:Home,
-			children:[
-				{
-					path:'/home/private',
-					component:Private,
-				},
-				{
-					path:'/home/public',
-					component:Public,
-				}
-			]
-		},
 		{
 			path:'/center',
 			component:Center,
@@ -56,6 +41,20 @@ export default new VueRouter({
 		{
 			path:'/myWallet',
 			component:MyWallet,
+		},
+		{
+			path:'/home',
+			component:Home,
+			children:[
+				{
+					path:'/home/private',
+					component:Private,
+				},
+				{
+					path:'/home/public',
+					component:Public,
+				}
+			]
 		}
 	]
 })

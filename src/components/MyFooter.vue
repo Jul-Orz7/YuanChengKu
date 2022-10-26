@@ -1,15 +1,10 @@
 <template>
-    <div>
-        <van-tabbar v-model="active" active-color="#ee0a24" inactive-color="green">
-            <van-tabbar-item icon="home-o">
-                <router-link to='/home'> <span>首页</span></router-link>
-            </van-tabbar-item>
-            <van-tabbar-item icon="search">
-                <router-link to="/other"><span>其他商品</span></router-link>
-            </van-tabbar-item>
-            <van-tabbar-item icon="setting-o">
-                <router-link to='/center'><span>个人中心</span></router-link>
-            </van-tabbar-item>
+    <div >
+        <router-view />
+            <van-tabbar route class="footerBg">
+            <van-tabbar-item replace to="/home/private" icon="home-o">首页</van-tabbar-item>
+            <van-tabbar-item replace to="/other" icon="search">其他商品</van-tabbar-item>
+            <van-tabbar-item replace to="/center" icon="setting-o">个人中心</van-tabbar-item>
         </van-tabbar>
     </div>
 </template>
@@ -26,6 +21,7 @@ export default {
 </script>
 
 <style  scoped>
-
-
+.footerBg{
+	border-top: 1px solid rgb(209, 204, 204);
+}
 </style>

@@ -3,6 +3,13 @@
 		<h1 v-text="msg" ref="title"></h1>
 		<button ref="btn" @click="showDOM">点我输出上方的DOM元素</button>
 		<School ref="sch"/>
+		<!-- <select  v-model="selected">
+			<option disabled value="">请选择：</option>
+			<option value="">A</option>
+			<option value="">B</option>
+			<option value="">C</option>
+		</select>
+		<span>Selected:{{selected}}</span> -->
 	</div>
 </template>
 
@@ -14,6 +21,8 @@
 		name:'App',
 		components:{School},
 		data() {
+			
+
 			return {
 				msg:'欢迎学习Vue！'
 			}
