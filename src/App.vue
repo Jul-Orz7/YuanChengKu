@@ -15,7 +15,7 @@
 	export default {
 		name:'App',
 		components:{Banner,MyFooter},
-    data() {
+    data() { 
       return {
         active: 0
       }
