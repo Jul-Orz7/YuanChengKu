@@ -12,7 +12,7 @@ export default new VueRouter({
 	routes:[
 		{
 			name:About,
-			path:'/about',
+			path:'/about', 
 			component:About
 		},
 		{
