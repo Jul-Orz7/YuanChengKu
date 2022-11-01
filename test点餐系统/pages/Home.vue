@@ -27,11 +27,14 @@
 	}
 </script>
 <style scoped>
+h4{
+    padding: 1%;
+}
 	.menu {
-		margin-left: 0px;
+		margin-left:1%;
 		height: 50px;
 		width: 100%;
-		background-color:rgb(242, 247, 243);
+		background-color:rgb(237, 245, 239);
 		border-bottom: 1px solid #DCDCDC;
 		display: flex;
 		justify-content:center;

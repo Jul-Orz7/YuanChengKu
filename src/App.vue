@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
 	import Banner from './components/Banner'
   import MyFooter from './components/MyFooter'
 	export default {
@@ -23,10 +24,9 @@
   methods:{
     switchTo(path){
       this.$router.replace(path)
-    }
   }
-  
-	}
+  }
+}
 </script>
 <style>
     a {

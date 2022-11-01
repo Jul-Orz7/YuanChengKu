@@ -11,6 +11,11 @@ import router from './router'
 import	Vant from 'vant'
 import 'vant/lib/index.css';
 
+//引入axios
+import axios from 'axios'
+Vue.prototype.$axios = axios
+
+
 Vue.use(Vant);
 
 

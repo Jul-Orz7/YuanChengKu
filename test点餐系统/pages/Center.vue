@@ -1,6 +1,7 @@
 <template>
-	<div>
-	<h4 class="text-center">个人中心</h4>
+   
+	<div  class="bg">
+    <h4 class="text-center">个人中心</h4>
 	<div >
         <div class="">
             <img src="https://img01.yzcdn.cn/vant/sand.jpg" height="150px" width="100%">
@@ -42,21 +43,20 @@
             <div role="button" tabindex="0" class="van-cell van-cell--clickable">
             <div class="van-cell__title"><span>我的申诉</span></div>
                 <i class="van-icon van-icon-arrow van-cell__right-icon"></i>
-            </div><br/>
-
+            </div>
             <div role="button" tabindex="0" class="van-cell van-cell--clickable">
                 <div class="van-cell__title"><span>历史反馈</span></div>
                 <i class="van-icon van-icon-arrow van-cell__right-icon"></i>
-            </div><br/>
+            </div>
             <div role="button" tabindex="0" class="van-cell van-cell--clickable">
                 <div class="van-cell__title"><span>意见反馈</span></div>
                     <i class="van-icon van-icon-arrow van-cell__right-icon"></i>
             </div>
+            
         </div>
         <!-- 扩展框结束 -->
-        
     </div>
-		<router-view></router-view>
+
 	</div>
 </template>
 
@@ -73,33 +73,37 @@
 </script>
 
 <style scoped>
+h4{
+    padding: 2%;
+}
 .ys{
     text-align: center;
-    width: 100%;
+    width: 98%;
 	/* border:1px solid rgb(161, 231, 184); */
     
 }
 .ys i{
     font-size: 20px;
-    font-weight: bold;
 }
 .ys2{
     text-align: center;
 }
 .ys3{
-    padding: 2%;
-    
-	/* border-bottom: 2px solid #DCDCDC; */
-
+    margin: 3% 0 0 0;
 }
 	span{
-	font-size: 13pt;
+	font-size: 10pt;
 }
 .muen{
     display: flex;
-    padding: 2%;
-    margin: 40px 0px;
-    width: 100%;
+    padding: 1%;
+    margin: 3% 0 3% 1%;
+    width: 98%;
+    background-color: rgba(243, 241, 241, 0.938);
+    border-radius: 10px;
+}
+.bg{
+    background-color: rgba(248, 246, 245, 0.411);
 }
 
 </style>
