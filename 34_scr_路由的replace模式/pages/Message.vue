@@ -15,15 +15,11 @@
 				}">
 					{{m.title}} 
 				</router-link>
-				<button @click="pushShow(m)">push查看</button>
-				<button @click="replaceShow(m)" >replace查看</button>
+			
 			</li>
 		</ul>
 		<hr>
 		<router-view></router-view>
-
-		
-
 	</div>
 </template>
 
@@ -37,27 +33,6 @@
 					{id:'002',title:'消息002'},
 					{id:'003',title:'消息003'}
 				]
-			}
-		},
-		methods:{
-			pushShow(m){
-				this.$router.push({
-					name:'xiangQing',
-					params:{
-						id:m.id,
-						title:m.title
-					}
-				})
-				// console.log(this.$router)
-			},
-			replaceShow(m){
-				this.$router.push({
-					name:'xiangQing',
-					params:{
-						id:m.id,
-						title:m.title
-					}
-				})
 			}
 		},
 	}
